@@ -1,4 +1,4 @@
-import React from "react";
+import Link from "next/link";
 
 const DashboardLayout = (props) => {
   return (
@@ -6,7 +6,7 @@ const DashboardLayout = (props) => {
       <nav className="bg-black text-white py-5 px-5 flex justify-between">
         <div className="font-bold text-xl">Logo</div>
         <ul className="flex gap-5">
-          <li>Home</li>
+          <Link href="/">Home</Link>
           <li>About us</li>
           <li>Contact us</li>
         </ul>
@@ -15,9 +15,9 @@ const DashboardLayout = (props) => {
         <div className="h-screen w-[15vw] bg-black p-5 text-white">
           <ul className="flex flex-col gap-6 font-medium">
             <li>Dashboard</li>
-            <li>Credits</li>
-            <li>Payment</li>
-            <li>Profile</li>
+            <Link href="/dashboard/todos">Todos</Link>
+            <Link href="/dashboard/users">Users</Link>
+            <Link href="/dashboard/profile">Profile</Link>
           </ul>
         </div>
 

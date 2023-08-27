@@ -4,7 +4,7 @@ const DashboardLayout = (props) => {
   return (
     <div>
       <nav className="bg-black text-white py-5 px-5 flex justify-between">
-        <div className="font-bold text-xl">Logo</div>
+        <div className="font-bold text-xl">Next-Demo App</div>
         <ul className="flex gap-5">
           <Link href="/">Home</Link>
           <li>About us</li>
@@ -21,7 +21,7 @@ const DashboardLayout = (props) => {
           </ul>
         </div>
 
-        <div>{props.children}</div>
+        <div className="max-h-screen overflow-auto">{props.children}</div>
       </div>
     </div>
   );
